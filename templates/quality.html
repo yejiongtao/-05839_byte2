@@ -46,27 +46,47 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+        <p>The dataset is not perfectly complete. It has some missing data. But it's coherent, correct and accountable.</a></p>
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>The dataset has some missing data. For example, the 'Deaths' column has some missing data (as shown below), 
+	which is shown when I used Wrangler for data manipulation.</p>
+	<img src="static/p1.png" alt="p1" width=300>
+	<p>The missing data definitely has influence in my analysis, 
+	because my goal is related to the number of death. To figure out what those missing data are, 
+	I filtered the 'Leading Cause' column. As shown below, the death number of the same cause should be similar. 
+	Thus, I believe those missing data should be 0's.</p>
+	<img src="static/p2.png" alt="p2" width=200>
+	<p>As for other columns, some numerical data is missing as well, but not related to my analysis.</P>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p>Yes, the data makes sense. For example, the distribution of 'Leading Cause' column is as follows. 
+	Ranging from 0.09% to 8.76%, which is normal.</p>
+	<img src="static/p3.png" alt="p3" width=400>
+	<p>And the Sex and Race Ethnicity columns also make sense. As shown below, 
+	people from different groups are of similar numbers.</p>
+	<img src="static/p4.png" alt="p4" width=400>
+	
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p>To some extent, the data should be correct, because it's provided by Department of Health and Mental Hygiene (DOHMH).
+	If the department's datasource is reliable, then this dataset should be correct. While there could be many causes 
+	that might endanger the correctness of it. For example, how the data collected? Is it reported by all the hospitals in New York 
+	City? Is it possible for hospitals to make mistake? However, I would assume its correctness, because of its source should
+	be a relatively reliable one.</p>
+      </div>
+      
+            <div class="page-header">
+	<h2>Is the data accountable?</h2>
+	<p>Yes. I know the source of the data, which is reliable. I have stored the original version and changed versions 
+	of data. Only myself can change the data displayed in this website. So it's accountable.</p>
       </div>
 
     </div> <!-- /container -->
